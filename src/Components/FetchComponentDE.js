@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import NewsItem from './NewsItem';
+import './fetch.css'
 
 class FetchComponentDE extends Component {
     state = {
@@ -27,7 +29,7 @@ class FetchComponentDE extends Component {
     render() {
         return (
             <div className="germany">
-
+                {this.state.news.map((data, i) => <NewsItem key={i} data={data} />)}
             </div>
         );
     }

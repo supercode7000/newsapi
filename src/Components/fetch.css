@@ -1,0 +1,12 @@
+.germany {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    gap: 20px;
+}
+img {
+    width: 100%;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+}

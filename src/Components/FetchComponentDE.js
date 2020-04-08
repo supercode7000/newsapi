@@ -8,7 +8,7 @@ class FetchComponentDE extends Component {
         news: []
     }
     componentDidMount() {
-        fetch("http://newsapi.org/v2/top-headlines?country=de&apiKey=c0f42c0fca144ac2b95c9391451520bc")
+        fetch("https://newsapi.org/v2/top-headlines?country=de&apiKey=c0f42c0fca144ac2b95c9391451520bc")
             .then(res => res.json())
             .then(
                 (result) => {
